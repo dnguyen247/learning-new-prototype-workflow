@@ -102,7 +102,7 @@ Grid: `grid-cols-[1.55fr_1fr_1fr]`, 2 rows, gap `12px`. Padding `0 40px 64px`. M
 
 - Background: `#f8fafc` (neutral50), border `#e2e8f0`
 - Icon wrap: `bg-brand500`, 40×40px, 10px radius
-- Icon: Lucide `Grid2X2` (white)
+- Icon: Lucide `HeartPulse` (white)
 - Title: "Electronic Data Capture", 20px/700
 - Description: compliance + eCRF copy
 - **Mini UI mock** (bottom, flex-1): white card with light-theme data rows (colored dots + bars + pastel badges), mock action buttons
@@ -112,9 +112,9 @@ Grid: `grid-cols-[1.55fr_1fr_1fr]`, 2 rows, gap `12px`. Padding `0 40px 64px`. M
 | Module | Icon (Lucide) | Accent color | Tag label |
 |---|---|---|---|
 | eTMF | `FileText` | purple `#7733ff` / bg `#e4d6ff` | Document Management |
-| CTMS | `Clock` | green `#009933` / bg `#ccebd6` | Trial Management |
-| eCOA | `ClipboardList` | orange `#cc6600` / bg `#fff5cc` | Patient Outcomes |
-| RTSM/IRT | `Hexagon` | cyan `#0088cc` / bg `#cceeff` | Randomization |
+| CTMS | `FlaskConical` | green `#009933` / bg `#ccebd6` | Trial Management |
+| eCOA | `Stethoscope` | orange `#cc6600` / bg `#fff5cc` | Patient Outcomes |
+| RTSM/IRT | `PackageOpen` | cyan `#0088cc` / bg `#cceeff` | Randomization |
 
 Each module card: white bg, border `#e2e8f0`, 12px radius, 24px padding. Icon wrap 36×36, title 15px/700, description 12px, colored tag pill at bottom.
 
