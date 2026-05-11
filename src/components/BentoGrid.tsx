@@ -45,10 +45,10 @@ const modules = [
 ]
 
 const mockRows = [
-  { dot: '#3355ff', badgeBg: '#d6ddff', width: '55%' },
-  { dot: '#009933', badgeBg: '#ccebd6', width: '70%' },
-  { dot: '#ff7f00', badgeBg: '#ffe6cc', width: '40%' },
-  { dot: '#94a3b8', badgeBg: '#f1f5f9', width: '62%' },
+  { id: 'inprogress', dot: '#3355ff', badgeBg: '#d6ddff', width: '55%' },
+  { id: 'complete',   dot: '#009933', badgeBg: '#ccebd6', width: '70%' },
+  { id: 'pending',    dot: '#ff7f00', badgeBg: '#ffe6cc', width: '40%' },
+  { id: 'na',         dot: '#94a3b8', badgeBg: '#f1f5f9', width: '62%' },
 ]
 
 export default function BentoGrid() {
@@ -69,8 +69,8 @@ export default function BentoGrid() {
           <p className="text-[9px] font-semibold text-neutral-400 uppercase tracking-widest mb-1">
             Subject Data — Visit 2
           </p>
-          {mockRows.map((row, i) => (
-            <div key={i} className="flex items-center gap-2">
+          {mockRows.map((row) => (
+            <div key={row.id} className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: row.dot }} />
               <div className="h-1.5 rounded bg-neutral-200 flex-1" style={{ maxWidth: row.width }} />
               <span className="w-9 h-3.5 rounded flex-shrink-0" style={{ backgroundColor: row.badgeBg }} />
